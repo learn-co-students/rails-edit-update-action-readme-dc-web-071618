@@ -1,0 +1,9 @@
+<%=  form_tag post_path(@post), method: "put" do %>
+<lable>Post title:</lable><br>
+<%= text_field_tag :title, @post.title %>
+
+<lable>Post description:</lable><br>
+<%= text_area_tag :description, @post.description %>
+
+<%= submit_tag "Submit Post" %>
+<% end %>
